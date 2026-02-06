@@ -1,0 +1,420 @@
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Marketplace Homepage Variant 1</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f99806",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#231b0f",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#181511] dark:text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-800 bg-white dark:bg-zinc-900 px-4 md:px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-8 w-full max-w-[1200px] mx-auto">
+<div class="flex items-center gap-4 text-[#181511] dark:text-white">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined text-3xl">storefront</span>
+</div>
+<h2 class="text-[#181511] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] font-display">Marketplace</h2>
+</div>
+<!-- Search Bar -->
+<div class="hidden md:flex flex-1 max-w-2xl">
+<label class="flex flex-col w-full h-10">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full overflow-hidden border border-gray-300 dark:border-gray-700">
+<div class="bg-gray-100 dark:bg-zinc-800 px-3 flex items-center border-r border-gray-300 dark:border-gray-700 cursor-pointer">
+<span class="text-xs font-medium mr-1">All</span>
+<span class="material-symbols-outlined text-sm">arrow_drop_down</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-[#181511] dark:text-white focus:outline-0 focus:ring-0 border-none bg-white dark:bg-zinc-800 placeholder:text-gray-500 px-4 text-base font-normal" placeholder="Search for products, brands and more" value=""/>
+<button class="bg-primary px-5 flex items-center justify-center text-white">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</label>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Deals</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Electronics</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+</div>
+<div class="flex gap-3">
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold tracking-[0.015em]">
+<span class="truncate">Sign In</span>
+</button>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-gray-100 dark:bg-zinc-800 text-[#181511] dark:text-white">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 w-full max-w-[1280px] mx-auto py-6 px-4">
+<!-- Hero Section Carousel Placeholder -->
+<div class="@container mb-8">
+<div class="@[480px]:p-0">
+<div class="flex min-h-[420px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-start justify-center px-8 md:px-16" data-alt="Modern electronics and lifestyle gadgets banner" style='background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC-mElq78O7vQzfRNA1nlm5ZpBllbmG5tpVQR2XDlJjW4tfWytHDFzh66R4drOA86mFqpbVAAMre0ZOx9mUeMVAFeNwC7XX6DaIdCu-F6txqekkBs9jEH2YeDlF5PuCefdXEJZ0bDwRUtadPfstZGOjaqkKV8WuK8Sxo3R0V6xzs5Fz4xf_EhKlgRBZIA-5Rar4VFyjt4yePw3mBVetzMcuVbqbMhq0uNfFgJHlx-Jy3GcMQxC4EvfParLlpGWm45pvKms-Vb7KDY0");'>
+<div class="flex flex-col gap-4 text-left max-w-lg">
+<span class="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full w-fit uppercase tracking-widest">Limited Offer</span>
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl font-display">
+                                    Next-Gen Tech <br/>Starting at $299
+                                </h1>
+<p class="text-white/90 text-lg font-normal leading-normal max-w-sm">
+                                    Experience the future with our exclusive collection of premium gadgets and smart home devices.
+                                </p>
+<div class="flex gap-4 mt-2">
+<button class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold transition-transform hover:scale-105">
+<span class="truncate">Shop Electronics</span>
+</button>
+<button class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-white/10 backdrop-blur-md text-white border border-white/30 text-base font-bold hover:bg-white/20">
+<span class="truncate">View Deals</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Categories -->
+<section class="mb-10">
+<div class="flex items-center justify-between px-4 mb-4">
+<h2 class="text-[#181511] dark:text-white text-2xl font-bold leading-tight tracking-[-0.015em] font-display">Shop by Category</h2>
+<a class="text-primary text-sm font-semibold hover:underline" href="#">See all categories</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 p-4">
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl shadow-sm border border-gray-100 dark:border-zinc-800 transition-transform group-hover:-translate-y-1" data-alt="Modern smartphone and headphones" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB-hextwUgd2vZjXcqRkWzwAWDkALkzGmc6Q9l2I8UB7QEm4yHwa00uxpHB4V0PsegP1uTl2WSy_y7-7EBVKWVEISCDQIzdd96aXzoSu52DbiwvDR2rkq3zzUJt_F5qeOSivKLMysnAvm4mhBAbIn-4HLjHHfuGIfxrSCrzzrpvrhg-DJXeB59Tvn2xrKsdNWsUiNCgLXEOXdsZcpnEC5LnC2wYbuR2EiO08DmKB-xTUOnCT6o3dAhBjc2GPJXB1E0HPwPTDQk-O18");'></div>
+<div class="text-center">
+<p class="text-[#181511] dark:text-white text-base font-bold font-display">Electronics</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-normal">New arrivals weekly</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl shadow-sm border border-gray-100 dark:border-zinc-800 transition-transform group-hover:-translate-y-1" data-alt="Minimalist living room decor" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBdyfs8nRPkgmfo_P-VhFkffqRifTM3APp5xO8Tj9IgH7lL9WKU0sr4JYbSkuO1eR7fFwc2f_YQl9ghHwTdH0L6lRuwZBJYljPxNpTP32YQ3vASogEU31QO2zyUHMWwf0hi2A4B83dC6-ikh3GbZPp0BG4KH3xpjjpx3BNJIeRvrzLpQgFuyD-I2GCS_fIca1WA8wE4fjI4xcCuZ7Rtx0NdYyZq-X-TYTuiCjbo-277tlRzwaRKbh8ABjfa67wLug0x_WCbq33LbbQ");'></div>
+<div class="text-center">
+<p class="text-[#181511] dark:text-white text-base font-bold font-display">Home Decor</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-normal">Elevate your space</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl shadow-sm border border-gray-100 dark:border-zinc-800 transition-transform group-hover:-translate-y-1" data-alt="Trendy summer clothing" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuATRl-DPKKI94ZBwRbIMDC4AuBInEjhyhiYdsCwZmFRfrLsCcuZnucqsPsHeMV2YN5XNVEErA5d5AmGTK7jcAF2HEr_X_ANPrKN1iArbjYLtOMecmIE5rzqMtGkdQor3GuNU2ePwZ8C-FO3QB7R7o62wKprjWmK8b0EMWr9f5aRC8dL0E1rjNJ8htr1S05EM-FEM1hrF9RayWNRDaTrkSFNkzLaHumDtsc6Y3k8IkF2P2AA2ALAglk-DkbrvQXOJh1mb_YP0AAGptA");'></div>
+<div class="text-center">
+<p class="text-[#181511] dark:text-white text-base font-bold font-display">Fashion</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-normal">Styles for everyone</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl shadow-sm border border-gray-100 dark:border-zinc-800 transition-transform group-hover:-translate-y-1" data-alt="Professional kitchen mixer" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfVa6OX0Dtk8e5RwMnLm1k82hGkJSiEytEG9N-MknxX-FJ_lBrSZZd0m6C4bZC2HrzbGnPUM0Bs5jOze3x5a4Kl2msJAp6nQ9phSPDa3U9Zns3FCCCnJAL2UGIeRA0nY1lmniqlCDiHsPgDIsRk2nWvCM4_x-GqzlVQ49Bt96R3kaA5tKBFaU_qZ91g6uQbkSy3siH5uUxiRcy20CLXW86_JeFIH2TgJExUUS1VUlCP6P2lC3YpAjS13Ljdej-lrqE5GXKBYV7ZSs");'></div>
+<div class="text-center">
+<p class="text-[#181511] dark:text-white text-base font-bold font-display">Kitchen</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-normal">Cook like a pro</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl shadow-sm border border-gray-100 dark:border-zinc-800 transition-transform group-hover:-translate-y-1" data-alt="Luxury skincare products" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEbbYD7UbLhM91QKV89DdkUDDhMc9g4mrQPFFyxI_zK9QROsCbSMdmIa5e4x2DqDkg-Zl9jYeQJj2zSuIJhFjWjY4MH0bmWbuNaCq-yupKqsz1oTkArWbFRrNIP8yUPQNhVNgckDk3HniC4uFZWx3VI3eCAzXItEUmvvPq2n4R3ylREO8266lAQqPeFmvy0co7De4tjjdG2lXpAWOuniu8ElGohvs6e6qtfGBqLQOEmtUj2CKIe_5kkihZbm41k4jDdVL0DcupdHI");'></div>
+<div class="text-center">
+<p class="text-[#181511] dark:text-white text-base font-bold font-display">Beauty</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-normal">Self-care essentials</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl shadow-sm border border-gray-100 dark:border-zinc-800 transition-transform group-hover:-translate-y-1" data-alt="Stack of hardcover books" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuChrAVDW2vqMAPL1MH8_t-slMAySb2H0A-5d39nZySGe1IFmCBGJlju2UefsD2LRD1L2277ywxE1vjI_vSQ7CFQJ2k0DGPQqzTwyjdNQowRQ0QNoQviq-Cco0KsfV72J8F56PL2pF0yfCA1KHwtf6qQsOVECiTehSiucOGNcJcdkcYwuRW0DPQFvLle38fDUomslelAclgxFKSWwqVX7j9DjODkU0fim1BvsAlLnb3eI6pQULQ78rkiQZZ6fXnmT02Nec7cDcWKtpg");'></div>
+<div class="text-center">
+<p class="text-[#181511] dark:text-white text-base font-bold font-display">Books</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-normal">Your next story</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Recommendation Section -->
+<section class="bg-white dark:bg-zinc-900 rounded-2xl p-6 shadow-sm mb-10 border border-gray-100 dark:border-zinc-800">
+<div class="flex items-center justify-between mb-6 px-2">
+<h2 class="text-[#181511] dark:text-white text-2xl font-bold leading-tight font-display">Continue shopping for</h2>
+<a class="text-primary text-sm font-bold flex items-center" href="#">
+                            View history <span class="material-symbols-outlined ml-1 text-base">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="flex gap-4 p-3 rounded-xl border border-gray-100 dark:border-zinc-800 hover:border-primary/50 transition-colors">
+<div class="size-24 flex-shrink-0 bg-center bg-no-repeat bg-contain rounded-lg" data-alt="Noise cancelling headphones" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZK1OXGjrh4gJ8tAg3cEtb-Hi3m1-2SXnfq_fYA5JifZ8QhbhPF0U2vMg9miPr0HCYz4JFHKEsTD7LKA-hLruFKP7137DV3O44M04_tBbguZsUzglkOjD18olS80WHdU4rp6Ct262uNB8lbafy35GmFR_5MxOCvK_xGFgyCEdHFUK2J0uM274kCDto6SvTMDZeSP2Ji_deVRjC4V17sGc-9JRlOSb5L6SC_8PC3jHS9Udu7H7HPSpKYbk0VWSX6G7LFlURsJMRKlI");'></div>
+<div class="flex flex-col justify-between">
+<div>
+<h3 class="text-sm font-bold line-clamp-2">Wireless Noise Cancelling Headphones</h3>
+<div class="flex items-center mt-1">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="material-symbols-outlined text-xs">star_half</span>
+</div>
+<span class="text-[10px] text-gray-500 ml-1">(1,240)</span>
+</div>
+</div>
+<p class="text-primary font-bold text-lg">$199.99</p>
+</div>
+</div>
+<div class="flex gap-4 p-3 rounded-xl border border-gray-100 dark:border-zinc-800 hover:border-primary/50 transition-colors">
+<div class="size-24 flex-shrink-0 bg-center bg-no-repeat bg-contain rounded-lg" data-alt="Smart watch silver edition" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDW77UwyOKBovdG5lhseefifWINgh6RkCzjyyH23wxMj8YpFkpZ4BUFity2z0DxMqy0uOKHVFwStlieaSwFd5PBFA4Z7UOrwC09aRQRDkES3n9il8x8azOvgJIODaFImKab25tBnEwKAum4DAHmM2ZFX9qRrfKW8mfLcuTsErzeYrKL8x4s6Kdo-b4haXbkAkfZb5G24yMml0DMDZofU3A-oOtPHBNZKWdEFPgOUNE8PTpspNC2sC_QiTg4uLpv6COKWqWvOC8iPTI");'></div>
+<div class="flex flex-col justify-between">
+<div>
+<h3 class="text-sm font-bold line-clamp-2">Smart Watch Series 7 - Silver</h3>
+<div class="flex items-center mt-1">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="material-symbols-outlined text-xs">star</span>
+</div>
+<span class="text-[10px] text-gray-500 ml-1">(892)</span>
+</div>
+</div>
+<p class="text-primary font-bold text-lg">$349.00</p>
+</div>
+</div>
+<div class="flex gap-4 p-3 rounded-xl border border-gray-100 dark:border-zinc-800 hover:border-primary/50 transition-colors">
+<div class="size-24 flex-shrink-0 bg-center bg-no-repeat bg-contain rounded-lg" data-alt="Professional DSLR camera" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBlxTtjgjcfN6Z12tU5xKsFLvnKS5LtXsu0B6KwiLXAnUkBI7_Gulg9WKLpM2Pth_3QQD0-csOsEwtm0w7RLhCgCHxz-w-0V9gecKjPQRK5II6j-fdJ3-d34N_aDL3mAtdoc8Q64HBXt9e64H9rpX4hghs1h-fSLu1Wc9TUUZxXuLu5FXEnUHXLTjl-fEFRPncPBac2utBWIwaZ2SvYj00dd4Cb0xhH_Bx3a6rxUf8tsStG00ZNr-enTEyrNNXWjz7Yj9gvCVTSE0g");'></div>
+<div class="flex flex-col justify-between">
+<div>
+<h3 class="text-sm font-bold line-clamp-2">4K Mirrorless Digital Camera</h3>
+<div class="flex items-center mt-1">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="material-symbols-outlined text-xs">star_outline</span>
+</div>
+<span class="text-[10px] text-gray-500 ml-1">(456)</span>
+</div>
+</div>
+<p class="text-primary font-bold text-lg">$899.00</p>
+</div>
+</div>
+<div class="flex gap-4 p-3 rounded-xl border border-gray-100 dark:border-zinc-800 hover:border-primary/50 transition-colors">
+<div class="size-24 flex-shrink-0 bg-center bg-no-repeat bg-contain rounded-lg" data-alt="Ergonomic mechanical keyboard" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCMLSMI8x1zfhJ_IriWJgpAhw8LY-5mxY0Uob-r7h3cYeT8hiRtXsE60-vNfLvRIQ8ovy4WG6Poq92fsLhlfx1Tz-7l71Yh1uiJeHvfNj_L36IukCauLjvmV3537FeD51gstb9zVsQtFL2VjyArzi3c9VtBOnkxzK7vVliKeW0Z9igfV6ikV5LKZACB6KmsJnW7GNn-Wz5WJXwMEfrXlPQ4L2NKO8OjZDCvjq-LvJ8VDCWUu-_AlKUvsvlN_efIC_gUpO8Aa29sClQ");'></div>
+<div class="flex flex-col justify-between">
+<div>
+<h3 class="text-sm font-bold line-clamp-2">RGB Mechanical Gaming Keyboard</h3>
+<div class="flex items-center mt-1">
+<div class="flex text-primary">
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="material-symbols-outlined text-xs">star_half</span>
+</div>
+<span class="text-[10px] text-gray-500 ml-1">(2,103)</span>
+</div>
+</div>
+<p class="text-primary font-bold text-lg">$129.50</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Best Sellers Grid -->
+<section>
+<div class="flex items-center justify-between px-4 mb-4">
+<h2 class="text-[#181511] dark:text-white text-2xl font-bold leading-tight font-display">Best Sellers in Electronics</h2>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-5 gap-6 p-4">
+<!-- Product Card 1 -->
+<div class="flex flex-col bg-white dark:bg-zinc-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group border border-gray-100 dark:border-zinc-800">
+<div class="relative w-full aspect-[4/5] bg-gray-50 dark:bg-zinc-800">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform group-hover:scale-105" data-alt="Modern tablet with stylus" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCcSEf79QEucioxHHpiTtIniR5qgbtN154UipR7jKq7eRHXTRLzInwiqnSEbTHUfxXJ3DoDrzSD85tL-VI0oQrPhuZljgm0e1M3j3zzJCokyeTd5ZxUU_iHQIJdp91Qt6IrX8f9CkiYCyn-Fw9NdOtCYy0VW4COBzs-PVBXBSQc7xO7DRolHHCS_XnU6VyAPZ5Xnr7J6FwfCQIacdMhjuzBXntGgKKf3bte6poSs4HsbmSElfNGlMQ3CEivKar1b3Evud6aQQhn1-U");'></div>
+<button class="absolute top-3 right-3 p-1.5 bg-white/80 dark:bg-zinc-900/80 rounded-full text-gray-400 hover:text-red-500">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-sm font-medium mb-1 line-clamp-2">Pro Tablet 12.9" with Ultra Retina Display</h3>
+<div class="flex items-center mb-2">
+<span class="text-xs bg-primary/10 text-primary font-bold px-2 py-0.5 rounded">Amazon's Choice</span>
+</div>
+<div class="mt-auto">
+<div class="flex items-baseline gap-2">
+<span class="text-xl font-black text-primary">$799.00</span>
+<span class="text-xs text-gray-400 line-through">$999.00</span>
+</div>
+<p class="text-[10px] text-gray-500 mt-1">Free delivery by tomorrow</p>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="flex flex-col bg-white dark:bg-zinc-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group border border-gray-100 dark:border-zinc-800">
+<div class="relative w-full aspect-[4/5] bg-gray-50 dark:bg-zinc-800">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform group-hover:scale-105" data-alt="Smart speaker charcoal gray" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDazLeY0T1Jwfruz-zJhBvgfs6xQNWV-5b-jgejUOLi_c4LBzf50Zk6pzVLsEBmBec2gtmCnX4CilBkYecp8Z72h2gwlnwoUBt0FJP6Bqqfde_Jyj2BNRbiy8GcSQTYN66duc6urUcFqVDFOIx2N20QwgKMbO0eO4Zs8j1jJzek_dumUI1F2UGUNV-JZ91FvElljWzKxfXwyhNbhGjb7PlDGbYprgtX8IXtgIB29bpBbCHSxqLMZ8Wsm4crslll0N6RdUGl3zQJJHI");'></div>
+<button class="absolute top-3 right-3 p-1.5 bg-white/80 dark:bg-zinc-900/80 rounded-full text-gray-400 hover:text-red-500">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-sm font-medium mb-1 line-clamp-2">Smart Home Voice Assistant Gen 4</h3>
+<div class="flex items-center mb-2">
+<span class="text-xs bg-red-100 text-red-600 font-bold px-2 py-0.5 rounded">Hot Deal</span>
+</div>
+<div class="mt-auto">
+<div class="flex items-baseline gap-2">
+<span class="text-xl font-black text-primary">$49.99</span>
+<span class="text-xs text-gray-400 line-through">$89.99</span>
+</div>
+<p class="text-[10px] text-gray-500 mt-1">Prime delivery eligible</p>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="flex flex-col bg-white dark:bg-zinc-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group border border-gray-100 dark:border-zinc-800">
+<div class="relative w-full aspect-[4/5] bg-gray-50 dark:bg-zinc-800">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform group-hover:scale-105" data-alt="Silver laptop sleek design" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDnIk9b8VCUA5lIM9z0o_VCRZNLvW0NXGG3Jjjb7OqQHFH_UY3hfWZ-0EG_wuZvENXHKm-1RWbi_XXBFd2388eXILKfDcQ1T_KhOHjjBRRMLQ36ida2o-H_x5ov_8sdVWoyr0lnDiXWFNkzGc_2gttfh_74NarB1xSuvyDLKoUidGx916AWKkKn8CAwEJh1XGxkJhyMB0hSrQwYBqjqLhdThkjUYP_wbw6kFPxDOhV5E3R51zBpz8J5ASmcyAwez1oQvj1NIw1UBhw");'></div>
+<button class="absolute top-3 right-3 p-1.5 bg-white/80 dark:bg-zinc-900/80 rounded-full text-gray-400 hover:text-red-500">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-sm font-medium mb-1 line-clamp-2">Ultra-Thin 14" Business Laptop M2</h3>
+<div class="flex items-center mb-2">
+<span class="text-xs bg-gray-100 dark:bg-zinc-800 text-gray-600 dark:text-gray-300 font-bold px-2 py-0.5 rounded">Top Rated</span>
+</div>
+<div class="mt-auto">
+<div class="flex items-baseline gap-2">
+<span class="text-xl font-black text-primary">$1,199.00</span>
+</div>
+<p class="text-[10px] text-gray-500 mt-1">Get it by Thursday</p>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="flex flex-col bg-white dark:bg-zinc-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group border border-gray-100 dark:border-zinc-800">
+<div class="relative w-full aspect-[4/5] bg-gray-50 dark:bg-zinc-800">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform group-hover:scale-105" data-alt="Gaming mouse with LEDs" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtNfcd5tezpNHqAlvTdXOJ2hsE1hA87SWKofvHi4vuzQWzv4itar7pdVZqslqxYUi_j7gujx-uOLh9domgVTfpb920EqgBJQ2SHdmZarrFFVhoA9QicXv9ytnpSwZqaWOxMgeEwv0Kn_V0FdrxX2NOsq7C3lGQNdBEo05aMSUGUsxlNkEPSFEj0fsiaIYA2d1DSSsJVwhfxE0MXTBTkTwDpIJf7BEJ9hQQ3hmxUgdJXP0Fv6hoCpH2V6rsvB6p618B-AfwASvaEes");'></div>
+<button class="absolute top-3 right-3 p-1.5 bg-white/80 dark:bg-zinc-900/80 rounded-full text-gray-400 hover:text-red-500">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-sm font-medium mb-1 line-clamp-2">Wireless Optical Gaming Mouse 16K DPI</h3>
+<div class="flex items-center mb-2">
+<span class="text-xs bg-primary/10 text-primary font-bold px-2 py-0.5 rounded">Best Value</span>
+</div>
+<div class="mt-auto">
+<div class="flex items-baseline gap-2">
+<span class="text-xl font-black text-primary">$65.00</span>
+<span class="text-xs text-gray-400 line-through">$85.00</span>
+</div>
+<p class="text-[10px] text-gray-500 mt-1">Free shipping</p>
+</div>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="flex flex-col bg-white dark:bg-zinc-900 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group border border-gray-100 dark:border-zinc-800">
+<div class="relative w-full aspect-[4/5] bg-gray-50 dark:bg-zinc-800">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform group-hover:scale-105" data-alt="Professional studio microphone" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBtaEHf6Q3_v2B32Z2q1AxwYsvKye9MPnGNbcRTDur-evtkeJC_4xu3t3m5ZfpX9DvbRK2v9HAyXTMoKcDO0EadlBATWeutqe05uUccVeUJnaTDy8Ipvpq6yqoiQQYWW_3TSoIFsE5n90O9agxDZOLvaQhdQcZYoaTRq8_yTlRjEo7UqIBWXaHhjzK4vjIfBvIRgmviaDHaSkMVPjjHhNP2T6BVTvypRBaKNcT3qhEs6DbP7o2TyvOFi1xn5t16Z2HOcimg-0ntU4o");'></div>
+<button class="absolute top-3 right-3 p-1.5 bg-white/80 dark:bg-zinc-900/80 rounded-full text-gray-400 hover:text-red-500">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-sm font-medium mb-1 line-clamp-2">Pro Streaming Microphone with Arm</h3>
+<div class="flex items-center mb-2">
+<span class="text-xs bg-green-100 text-green-700 font-bold px-2 py-0.5 rounded">In Stock</span>
+</div>
+<div class="mt-auto">
+<div class="flex items-baseline gap-2">
+<span class="text-xl font-black text-primary">$159.00</span>
+</div>
+<p class="text-[10px] text-gray-500 mt-1">Next day delivery</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Collection Section -->
+<section class="mt-12 mb-10 overflow-hidden rounded-2xl">
+<div class="grid grid-cols-1 md:grid-cols-2 bg-zinc-900 text-white min-h-[400px]">
+<div class="p-12 flex flex-col justify-center items-start">
+<h2 class="text-3xl font-black mb-4 font-display">Upgrade Your Kitchen</h2>
+<p class="text-gray-400 mb-8 max-w-sm">Discover the latest in smart kitchen appliances. From connected coffee makers to energy-efficient refrigerators.</p>
+<button class="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-8 rounded-lg transition-colors">
+                                Explore Collection
+                            </button>
+</div>
+<div class="bg-center bg-cover min-h-[300px]" data-alt="Luxury kitchen appliance set" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCDz2HF-5jLmqwGcZ1uReHIzh372x6yunLL_jYEYqoEHNAOFKbfvAMYyTeo0n0uzSTvMGXeObmD8AblnSJoS-tZZjBOvatsl-lsrN1Sa6_nbXCADHf-t-VN6KbOUW75gohHU-NH9_jhs-JqVrwKck0s6UYjxW0zpOG4kIzWwWdLI3IB54JGnhLIy7EnPKRIR7D2GFKnuXS4ty64fDVYQumGkprtRRkWIZsOU7Iwx_hZXMWX8jNsqdsV8QsQ9N2Xw_cGK5KinklczQY");'>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-zinc-900 border-t border-gray-200 dark:border-zinc-800 pt-12 pb-6">
+<div class="max-w-[1280px] mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+<div>
+<h4 class="font-bold mb-4">Get to Know Us</h4>
+<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+<li><a class="hover:underline" href="#">About Marketplace</a></li>
+<li><a class="hover:underline" href="#">Careers</a></li>
+<li><a class="hover:underline" href="#">Press Releases</a></li>
+<li><a class="hover:underline" href="#">Sustainability</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Make Money with Us</h4>
+<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+<li><a class="hover:underline" href="#">Sell on Marketplace</a></li>
+<li><a class="hover:underline" href="#">Supply to Marketplace</a></li>
+<li><a class="hover:underline" href="#">Become an Affiliate</a></li>
+<li><a class="hover:underline" href="#">Advertise Your Products</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Marketplace Payment</h4>
+<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+<li><a class="hover:underline" href="#">Business Card</a></li>
+<li><a class="hover:underline" href="#">Shop with Points</a></li>
+<li><a class="hover:underline" href="#">Reload Your Balance</a></li>
+<li><a class="hover:underline" href="#">Currency Converter</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Let Us Help You</h4>
+<ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+<li><a class="hover:underline" href="#">Your Account</a></li>
+<li><a class="hover:underline" href="#">Your Orders</a></li>
+<li><a class="hover:underline" href="#">Shipping Rates</a></li>
+<li><a class="hover:underline" href="#">Help Center</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-100 dark:border-zinc-800 pt-6 text-center text-xs text-gray-500">
+<p>© 2024 Marketplace Inc. or its affiliates. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
