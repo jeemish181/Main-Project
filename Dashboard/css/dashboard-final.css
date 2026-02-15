@@ -1,0 +1,54 @@
+﻿:root {
+            --primary-color: #f472b6;
+            --profit-line: #22d3ee;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .donut-segment { transition: all 0.3s ease; }
+        .chart-bar { transition: height 0.6s ease-out; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .premium-shadow {
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+        }
+        /* UI hover lift + shadow for interactive elements */
+        .ui-hover, aside a, aside button, header button, main button, .chart-bar, .tooltip-trigger > div, .card {
+            transition: transform 180ms ease, box-shadow 180ms ease;
+        }
+        .ui-hover:hover, aside a:hover, aside button:hover, header button:hover, main button:hover, .chart-bar:hover, .tooltip-trigger > div:hover, .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(2,6,23,0.08);
+        }
+        /* Keep sidebar rail toggle fully static on hover */
+        #sidebarRailToggle,
+        #sidebarRailToggle:hover {
+            transform: none !important;
+            box-shadow: none !important;
+            transition: none !important;
+        }
+        .soft-gradient-blue { fill: url(#grad-blue); }
+        .soft-gradient-green { fill: url(#grad-green); }
+        .soft-gradient-orange { fill: url(#grad-orange); }
+        .chart-bar-hover:hover .tooltip-trigger {
+            opacity: 1;
+            visibility: visible;
+        }
+        /* Sidebar collapse state */
+        aside, main { transition: all 220ms ease; }
+        body.sidebar-collapsed aside { width: 5rem; }
+        body.sidebar-collapsed main { margin-left: 5rem; }
+        body.sidebar-collapsed aside nav h3,
+        body.sidebar-collapsed aside nav a span:last-child,
+        body.sidebar-collapsed aside nav button span:last-child,
+        body.sidebar-collapsed aside > div:first-child > span:last-child,
+        body.sidebar-collapsed aside > div:last-child a span:last-child,
+        body.sidebar-collapsed aside > div:last-child button span:last-child,
+        body.sidebar-collapsed aside > div:last-child .flex.items-center.justify-between > div > span:last-child {
+            display: none;
+        }
+        body.sidebar-collapsed aside nav a,
+        body.sidebar-collapsed aside nav button,
+        body.sidebar-collapsed aside > div:last-child a,
+        body.sidebar-collapsed aside > div:last-child > button:first-child {
+            justify-content: center;
+        }
